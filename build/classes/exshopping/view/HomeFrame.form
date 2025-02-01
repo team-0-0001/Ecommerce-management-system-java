@@ -172,6 +172,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Home"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Home_btnMouseClicked"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
@@ -212,7 +215,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="profile_btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="P"/>
+        <Property name="text" type="java.lang.String" value="&#xf2bd;"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="profile_btnMouseClicked"/>
@@ -223,7 +226,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="search_btn1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jButton1"/>
+        <Property name="text" type="java.lang.String" value="&#xe68f;"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -231,7 +234,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="addcart_btn1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="A"/>
+        <Property name="text" type="java.lang.String" value="&#xf217;"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addcart_btn1MouseClicked"/>

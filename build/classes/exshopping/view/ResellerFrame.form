@@ -76,14 +76,14 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jButton1" min="-2" pref="269" max="-2" attributes="0"/>
+                                      <Component id="upload_btn" min="-2" pref="269" max="-2" attributes="0"/>
                                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="fetch_btn3" min="-2" pref="213" max="-2" attributes="0"/>
+                                          <Component id="add_btn" min="-2" pref="213" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="fetch_btn2" min="-2" pref="264" max="-2" attributes="0"/>
+                                          <Component id="update_btn" min="-2" pref="264" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="fetch_btn" min="-2" pref="232" max="-2" attributes="0"/>
+                                          <Component id="remove_btn" min="-2" pref="232" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -96,15 +96,15 @@
                   <EmptySpace pref="57" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jTextField3" min="-2" pref="299" max="-2" attributes="0"/>
+                          <Component id="product_name_input" min="-2" pref="299" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                          <Component id="jTextField1" min="-2" pref="299" max="-2" attributes="0"/>
+                          <Component id="price_input" min="-2" pref="299" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField4" min="-2" pref="299" max="-2" attributes="0"/>
+                              <Component id="category_input" min="-2" pref="299" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
                       </Group>
@@ -120,7 +120,7 @@
               <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                      <Component id="jTextField2" min="-2" pref="248" max="-2" attributes="0"/>
+                      <Component id="id_input" min="-2" pref="248" max="-2" attributes="0"/>
                       <EmptySpace pref="413" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -141,7 +141,7 @@
               <Group type="103" rootIndex="5" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                      <Component id="jTextField5" min="-2" pref="299" max="-2" attributes="0"/>
+                      <Component id="stock_input" min="-2" pref="299" max="-2" attributes="0"/>
                       <EmptySpace pref="508" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -165,8 +165,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jTextField1" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
-                              <Component id="jTextField3" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="price_input" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="product_name_input" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
                           <Component id="jScrollPane2" min="-2" pref="203" max="-2" attributes="0"/>
@@ -180,14 +180,14 @@
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jTextField4" min="-2" pref="46" max="-2" attributes="0"/>
+                  <Component id="category_input" min="-2" pref="46" max="-2" attributes="0"/>
                   <EmptySpace pref="63" max="32767" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="upload_btn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="fetch_btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fetch_btn2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="fetch_btn3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="remove_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="update_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="add_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
               </Group>
@@ -201,7 +201,7 @@
               <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="193" max="-2" attributes="0"/>
-                      <Component id="jTextField2" min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="id_input" min="-2" pref="46" max="-2" attributes="0"/>
                       <EmptySpace pref="909" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -222,7 +222,7 @@
               <Group type="103" rootIndex="5" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="841" max="32767" attributes="0"/>
-                      <Component id="jTextField5" min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="stock_input" min="-2" pref="46" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="284" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -253,7 +253,7 @@
             <Property name="text" type="java.lang.String" value="Price:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="price_input">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NF" size="36" style="0"/>
@@ -261,10 +261,10 @@
             <Property name="text" type="java.lang.String" value="xxx"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="price_inputActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="fetch_btn">
+        <Component class="javax.swing.JButton" name="remove_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NFP SemiBold" size="24" style="0"/>
@@ -280,7 +280,7 @@
             <Property name="text" type="java.lang.String" value="ID:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="id_input">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NF" size="36" style="0"/>
@@ -288,7 +288,7 @@
             <Property name="text" type="java.lang.String" value="xxx"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="id_inputActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
@@ -299,7 +299,7 @@
             <Property name="text" type="java.lang.String" value="Stock Quanity"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="product_name_input">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NF" size="36" style="0"/>
@@ -307,7 +307,7 @@
             <Property name="text" type="java.lang.String" value="xxx"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="product_name_inputActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
@@ -325,7 +325,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTextArea" name="jTextArea1">
+            <Component class="javax.swing.JTextArea" name="description_input">
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
@@ -341,7 +341,7 @@
             <Property name="text" type="java.lang.String" value="Description:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="category_input">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NF" size="36" style="0"/>
@@ -349,7 +349,7 @@
             <Property name="text" type="java.lang.String" value="xxx"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="category_inputActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel15">
@@ -360,7 +360,7 @@
             <Property name="text" type="java.lang.String" value="Category"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField5">
+        <Component class="javax.swing.JTextField" name="stock_input">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NF" size="36" style="0"/>
@@ -368,13 +368,16 @@
             <Property name="text" type="java.lang.String" value="xxx"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="stock_inputActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="upload_btn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Upload Image"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="upload_btnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="fetch_btn1">
           <Properties>
@@ -383,22 +386,31 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Fetch"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="fetch_btn1MouseClicked"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="fetch_btn2">
+        <Component class="javax.swing.JButton" name="update_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NFP SemiBold" size="24" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Update Product"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="update_btnMouseClicked"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="fetch_btn3">
+        <Component class="javax.swing.JButton" name="add_btn">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NFP SemiBold" size="24" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Add Product"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="add_btnMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -410,110 +422,37 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                              <Component id="jScrollPane1" alignment="0" min="-2" pref="803" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="822" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
-              </Group>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="565" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="318" max="-2" attributes="0"/>
-                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="472" max="32767" attributes="0"/>
-                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="115" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="573" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-              </Group>
-              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="869" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="207" max="-2" attributes="0"/>
-                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="864" max="32767" attributes="0"/>
-                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" pref="1049" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel4">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Iosevka NFM ExtraLight" size="36" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="200"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Iosevka NFM ExtraLight" size="36" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="My Products:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel6">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Iosevka NFM ExtraLight" size="36" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Total Avaible Stock:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Iosevka NFM ExtraLight" size="36" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Total Sale:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Iosevka NFM ExtraLight" size="36" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="1000"/>
+            <Property name="text" type="java.lang.String" value="All Products:"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -523,8 +462,11 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable1">
+            <Component class="javax.swing.JTable" name="product_table">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Iosevka NF" size="30" style="0"/>
+                </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="4">
                     <Column editable="true" title="Title 1" type="java.lang.Object"/>
@@ -533,18 +475,11 @@
                     <Column editable="true" title="Title 4" type="java.lang.Object"/>
                   </Table>
                 </Property>
+                <Property name="rowHeight" type="int" value="60"/>
               </Properties>
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="jLabel9">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Iosevka NFM ExtraLight" size="36" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Analyse"/>
-          </Properties>
-        </Component>
       </SubComponents>
     </Container>
   </SubComponents>
