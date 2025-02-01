@@ -98,6 +98,11 @@ public class HomeFrame extends javax.swing.JFrame {
         login_btn.setText("Ex Shopping");
 
         Home_btn.setText("Home");
+        Home_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Home_btnMouseClicked(evt);
+            }
+        });
 
         contact_btn.setText("Contact");
 
@@ -117,16 +122,16 @@ public class HomeFrame extends javax.swing.JFrame {
             }
         });
 
-        profile_btn.setText("P");
+        profile_btn.setText("");
         profile_btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 profile_btnMouseClicked(evt);
             }
         });
 
-        search_btn1.setText("jButton1");
+        search_btn1.setText("");
 
-        addcart_btn1.setText("A");
+        addcart_btn1.setText("");
         addcart_btn1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 addcart_btn1MouseClicked(evt);
@@ -359,6 +364,11 @@ public class HomeFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
 		new ResellerFrame().setVisible(true);
     }//GEN-LAST:event_about_btnMouseClicked
+
+    private void Home_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Home_btnMouseClicked
+        // TODO add your handling code here:
+		new HomeFrame().setVisible(true);
+    }//GEN-LAST:event_Home_btnMouseClicked
 
 	public void displayProducts() {
 		product_frame.removeAll();

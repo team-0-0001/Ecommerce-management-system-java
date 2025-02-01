@@ -86,6 +86,7 @@ public class AddCartFrame extends javax.swing.JFrame {
         about_btn = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
+        search_btn2 = new javax.swing.JButton();
         login_btn = new javax.swing.JLabel();
         Home_btn = new javax.swing.JLabel();
         contact_btn = new javax.swing.JLabel();
@@ -112,6 +113,8 @@ public class AddCartFrame extends javax.swing.JFrame {
 
         about_btn.setText("About");
 
+        search_btn2.setText("");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         login_btn.setFont(new java.awt.Font("SansSerif.plain", 1, 24)); // NOI18N
@@ -137,16 +140,16 @@ public class AddCartFrame extends javax.swing.JFrame {
             }
         });
 
-        search_btn1.setText("jButton1");
+        search_btn1.setText("");
 
-        addcart_btn1.setText("A");
+        addcart_btn1.setText("󰄐");
         addcart_btn1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 addcart_btn1MouseClicked(evt);
             }
         });
 
-        profile_btn.setText("P");
+        profile_btn.setText("");
 
         addcart_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -287,9 +290,9 @@ public class AddCartFrame extends javax.swing.JFrame {
                         .addComponent(contact_btn)
                         .addGap(76, 76, 76)
                         .addComponent(about_btn1)
-                        .addGap(64, 64, 64)
+                        .addGap(65, 65, 65)
                         .addComponent(search_input, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
+                        .addGap(39, 39, 39)
                         .addComponent(search_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37)
                         .addComponent(addcart_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -317,11 +320,11 @@ public class AddCartFrame extends javax.swing.JFrame {
                     .addComponent(Home_btn)
                     .addComponent(contact_btn)
                     .addComponent(about_btn1)
+                    .addComponent(search_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(search_btn1)
                     .addComponent(addcart_btn1)
-                    .addComponent(profile_btn)
-                    .addComponent(search_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(95, 95, 95)
+                    .addComponent(profile_btn))
+                .addGap(96, 96, 96)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 645, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -332,7 +335,7 @@ public class AddCartFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
@@ -377,10 +380,14 @@ public class AddCartFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
 		int userId = AuthenticationController.getUserId();
 		int orderId = OrderController.createOrder(userId);
+		System.out.println("userId: " + userId);
+		System.out.println("orderId: " + orderId);
 
 		if (orderId != -1) {
 			JOptionPane.showMessageDialog(this, "Order placed successfully! Order ID: " + orderId);
 			CartController.clearAllCartData();
+	AddCartFrame();
+
 		} else {
 			JOptionPane.showMessageDialog(this, "Failed to place order");
 		}
@@ -457,6 +464,7 @@ public class AddCartFrame extends javax.swing.JFrame {
     public javax.swing.JLabel login_btn;
     public javax.swing.JButton profile_btn;
     public javax.swing.JButton search_btn1;
+    public javax.swing.JButton search_btn2;
     public javax.swing.JTextField search_input;
     public javax.swing.JLabel subtotal_label;
     public javax.swing.JLabel total_label;

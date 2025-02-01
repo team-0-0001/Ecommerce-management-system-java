@@ -14,6 +14,14 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator3">
     </Component>
+    <Component class="javax.swing.JButton" name="search_btn2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xe68f;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -48,9 +56,9 @@
                       <Component id="contact_btn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                       <Component id="about_btn1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                       <Component id="search_input" min="-2" pref="281" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="search_btn1" min="-2" pref="67" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Component id="addcart_btn1" min="-2" pref="67" max="-2" attributes="0"/>
@@ -85,12 +93,12 @@
                   <Component id="Home_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="contact_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="about_btn1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="search_input" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="search_btn1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="addcart_btn1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="profile_btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="search_input" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="645" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -105,7 +113,7 @@
                       <Component id="jDesktopPane1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="33" max="32767" attributes="0"/>
+              <EmptySpace pref="32" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -166,7 +174,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="search_btn1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jButton1"/>
+        <Property name="text" type="java.lang.String" value="&#xe68f;"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -174,7 +182,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="addcart_btn1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="A"/>
+        <Property name="text" type="java.lang.String" value="\udb80\udd10" containsInvalidXMLChars="true"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addcart_btn1MouseClicked"/>
@@ -185,7 +193,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="profile_btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="P"/>
+        <Property name="text" type="java.lang.String" value="&#xf007;"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

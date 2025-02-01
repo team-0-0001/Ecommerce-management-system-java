@@ -4,7 +4,9 @@
  */
 package exshopping.view;
 
-import static exshopping.controller.AuthenticationController.loginUser;
+import exshopping.controller.AuthenticationController;
+import exshopping.model.LoginResult;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -132,13 +134,13 @@ public class LoginForm extends javax.swing.JFrame {
                         .addGap(79, 79, 79)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(password_input, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8)
                             .addComponent(jLabel9)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(Login_btn)
                                 .addGap(140, 140, 140)
                                 .addComponent(forgot_btn))
-                            .addComponent(username_input, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8))
+                            .addComponent(username_input, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -162,14 +164,14 @@ public class LoginForm extends javax.swing.JFrame {
                         .addGap(83, 83, 83)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 682, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(162, 162, 162)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(256, 256, 256)
+                                .addGap(36, 36, 36)
                                 .addComponent(jLabel7))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(93, 93, 93)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(87, 87, 87)
+                                .addGap(18, 18, 18)
                                 .addComponent(jLabel9)))
                         .addGap(64, 64, 64)
                         .addComponent(username_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -204,13 +206,38 @@ public class LoginForm extends javax.swing.JFrame {
 		}
 
 		// Attempt login
-		if (loginUser(username, password)) {
-			JOptionPane.showMessageDialog(this, "Login Successful!");
-			// TODO: Open main application window
-			new HomeFrame().setVisible(true);
-			this.dispose(); // Close login form
-		} else {
-			JOptionPane.showMessageDialog(this,
+		LoginResult result = AuthenticationController.loginUser(username, password);
+		if (result.isSuccess()) {
+			switch (result.getRole().toLowerCase()) {
+				case "admin":
+					JFrame frame2 = new JFrame();
+					AdminPage admin = new AdminPage();
+					frame2.add(admin);
+					frame2.pack();
+					frame2.setVisible(true);
+					this.dispose();
+					break;
+				case "reseller":
+					JFrame frame1 = new JFrame();
+					ResellerFrame seller = new ResellerFrame();
+					frame1.add(seller);
+					frame1.pack();
+					frame1.setVisible(true);
+					this.dispose();
+					break;
+				case "user":
+					new HomeFrame().setVisible(true);
+					this.dispose();
+					break;
+				default:
+					JOptionPane.showMessageDialog(null,
+							"Invalid user role",
+							"Error",
+							JOptionPane.ERROR_MESSAGE);
+
+					}
+		}else {
+			JOptionPane.showMessageDialog(null,
 					"Invalid username or password",
 					"Login Failed",
 					JOptionPane.ERROR_MESSAGE);

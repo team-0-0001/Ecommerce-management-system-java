@@ -29,17 +29,14 @@ public class SettingFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        profile_btn2 = new javax.swing.JButton();
         login_btn = new javax.swing.JLabel();
-        Home_btn = new javax.swing.JLabel();
         contact_btn = new javax.swing.JLabel();
         about_btn = new javax.swing.JLabel();
         search_input = new javax.swing.JTextField();
-        search_btn1 = new javax.swing.JButton();
-        addcart_btn1 = new javax.swing.JButton();
-        profile_btn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        Order_btn = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         name_input = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
@@ -50,13 +47,23 @@ public class SettingFrame extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        search_btn2 = new javax.swing.JButton();
+        addcart_btn2 = new javax.swing.JButton();
+        profile_btn1 = new javax.swing.JButton();
+        profile_btn3 = new javax.swing.JButton();
+        Home_btn1 = new javax.swing.JLabel();
+
+        profile_btn2.setText("");
+        profile_btn2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                profile_btn2MouseClicked(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         login_btn.setFont(new java.awt.Font("SansSerif.plain", 1, 24)); // NOI18N
         login_btn.setText("Ex Shopping");
-
-        Home_btn.setText("Home");
 
         contact_btn.setText("Contact");
 
@@ -71,18 +78,17 @@ public class SettingFrame extends javax.swing.JFrame {
             }
         });
 
-        search_btn1.setText("jButton1");
-
-        addcart_btn1.setText("A");
-
-        profile_btn.setText("P");
-
         jLabel1.setFont(new java.awt.Font("SansSerif.plain", 1, 24)); // NOI18N
         jLabel1.setText("Manage Account");
 
         jLabel2.setText("My profile");
 
-        jLabel3.setText("Order");
+        Order_btn.setText("Order");
+        Order_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Order_btnMouseClicked(evt);
+            }
+        });
 
         jLabel4.setText("whitelist");
 
@@ -109,29 +115,42 @@ public class SettingFrame extends javax.swing.JFrame {
             }
         });
 
+        search_btn2.setText("");
+
+        addcart_btn2.setText("");
+        addcart_btn2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addcart_btn2MouseClicked(evt);
+            }
+        });
+
+        profile_btn1.setText("");
+        profile_btn1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                profile_btn1MouseClicked(evt);
+            }
+        });
+
+        profile_btn3.setText("");
+        profile_btn3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                profile_btn3MouseClicked(evt);
+            }
+        });
+
+        Home_btn1.setText("Home");
+        Home_btn1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Home_btn1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(login_btn)
-                        .addGap(258, 258, 258)
-                        .addComponent(Home_btn)
-                        .addGap(128, 128, 128)
-                        .addComponent(contact_btn)
-                        .addGap(92, 92, 92)
-                        .addComponent(about_btn)
-                        .addGap(73, 73, 73)
-                        .addComponent(search_input, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56)
-                        .addComponent(search_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36)
-                        .addComponent(addcart_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(profile_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(88, 88, 88)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -140,7 +159,7 @@ public class SettingFrame extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2)
                                     .addComponent(jLabel1)
-                                    .addComponent(jLabel3)
+                                    .addComponent(Order_btn)
                                     .addComponent(jLabel4))
                                 .addGap(236, 236, 236)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -151,40 +170,61 @@ public class SettingFrame extends javax.swing.JFrame {
                                     .addComponent(jPasswordField1)
                                     .addComponent(name_input)
                                     .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(56, Short.MAX_VALUE))
+                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(login_btn)
+                        .addGap(281, 281, 281)
+                        .addComponent(Home_btn1)
+                        .addGap(105, 105, 105)
+                        .addComponent(contact_btn)
+                        .addGap(92, 92, 92)
+                        .addComponent(about_btn)
+                        .addGap(73, 73, 73)
+                        .addComponent(search_input, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(search_btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(addcart_btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(profile_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(70, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(1491, Short.MAX_VALUE)
+                    .addComponent(profile_btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(60, 60, 60)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(login_btn)
-                                    .addComponent(Home_btn)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(contact_btn)
-                                    .addComponent(about_btn)
-                                    .addComponent(search_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(search_btn1)
-                                    .addComponent(addcart_btn1)
-                                    .addComponent(profile_btn))))
-                        .addGap(162, 162, 162)
+                        .addGap(26, 26, 26)
+                        .addComponent(login_btn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(contact_btn)
+                            .addComponent(about_btn)
+                            .addComponent(search_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(search_btn2)
+                            .addComponent(addcart_btn2)
+                            .addComponent(profile_btn1)
+                            .addComponent(Home_btn1))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
                             .addComponent(jLabel5))
                         .addGap(38, 38, 38)
                         .addComponent(jLabel2))
-                    .addComponent(name_input, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(name_input, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jLabel3))
+                        .addComponent(Order_btn))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addComponent(jLabel6)))
@@ -206,6 +246,11 @@ public class SettingFrame extends javax.swing.JFrame {
                 .addGap(59, 59, 59)
                 .addComponent(jButton1)
                 .addContainerGap(263, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(37, 37, 37)
+                    .addComponent(profile_btn3)
+                    .addContainerGap(1068, Short.MAX_VALUE)))
         );
 
         pack();
@@ -218,6 +263,38 @@ public class SettingFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void addcart_btn2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addcart_btn2MouseClicked
+        // TODO add your handling code here:
+        new AddCartFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_addcart_btn2MouseClicked
+
+    private void profile_btn1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profile_btn1MouseClicked
+        // TODO add your handling code here:
+        new Profile().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_profile_btn1MouseClicked
+
+    private void profile_btn2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profile_btn2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_profile_btn2MouseClicked
+
+    private void profile_btn3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profile_btn3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_profile_btn3MouseClicked
+
+    private void Home_btn1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Home_btn1MouseClicked
+        // TODO add your handling code here:
+        new HomeFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Home_btn1MouseClicked
+
+    private void Order_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Order_btnMouseClicked
+        // TODO add your handling code here:
+        new OrderFrame().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Order_btnMouseClicked
 
 	/**
 	 * @param args the command line arguments
@@ -255,14 +332,14 @@ public class SettingFrame extends javax.swing.JFrame {
 	}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel Home_btn;
+    public javax.swing.JLabel Home_btn1;
+    private javax.swing.JLabel Order_btn;
     public javax.swing.JLabel about_btn;
-    public javax.swing.JButton addcart_btn1;
+    public javax.swing.JButton addcart_btn2;
     public javax.swing.JLabel contact_btn;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -272,8 +349,10 @@ public class SettingFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     public javax.swing.JLabel login_btn;
     public javax.swing.JTextField name_input;
-    public javax.swing.JButton profile_btn;
-    public javax.swing.JButton search_btn1;
+    public javax.swing.JButton profile_btn1;
+    public javax.swing.JButton profile_btn2;
+    public javax.swing.JButton profile_btn3;
+    public javax.swing.JButton search_btn2;
     public javax.swing.JTextField search_input;
     public javax.swing.JTextField username_input;
     // End of variables declaration//GEN-END:variables
